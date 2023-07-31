@@ -1,0 +1,143 @@
+body, html {
+    background-color: #f1faee;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #4f000b;
+    
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-nav .fa-github {
+    color: white;
+    text-decoration: none;
+    font-size: 18;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+.navbar-nav .fa-github:hover {
+    color: #d0949d;   
+}
+
+.me-container {
+    height: 100vh;
+}
+
+.me {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #989481;
+    width: 400px;
+    height: 600px;
+
+}
+
+.me a {
+    color: #212529;
+}
+
+.me a:hover {
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .me {
+        position: fixed;
+    }
+}
+
+.me h2 {
+    font-size: 18px;
+}
+
+.me-contacts {
+    color: #212529;
+    font-size: 18px;
+}
+
+.me-contacts:hover {
+    color: white;
+}
+
+.contact-buttons a {
+    font-size: 50px;
+    padding: 0 20px 0 0;
+    text-decoration: none;
+}
+
+.about-container {
+    padding: 0;
+}
+
+.about {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    color: #2f2f2f;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.about h1 {
+    border-bottom: solid 2px;
+
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.about h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    border-bottom: solid 2px;
+
+}
+
+.about h3 {
+    font-size: 18px;
+}
+
+.about h4 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.about section {
+    margin-top: 250px;
+    padding-top: 10px;
+}
+
+.accordion-button, .accordion-body {
+    background-color: #f1faee;
+}
+
+.accordion {
+    border: solid 1px rgb(202, 202, 202);
+    margin-bottom: 40px;
+}
+
+.tools-list {
+    border-radius: 0px;
+}
+
+.tools-list-item {
+    display: flex;
+    align-items: center;
+    background-color: #f1faee;
+    height: 60px;
+}
+
+.font-awesome-text {
+    font-family: 'Source Code Pro', monospace;
+}
+
