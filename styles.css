@@ -1,17 +1,25 @@
-body, html {
+body,
+html {
     background-color: #f1faee;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Source Code Pro", monospace;
 }
 
 .navbar {
     position: fixed;
     width: 100%;
     background-color: #4f000b;
-    
+    z-index: 1;
 }
 
 .navbar-toggler-icon {
     background-color: white;
+    margin-right: 30px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
 }
 
 .navbar-nav .fa-github {
@@ -22,8 +30,12 @@ body, html {
     margin-left: 10px;
 }
 
-.navbar-nav .fa-github:hover {
-    color: #d0949d;   
+.nav-item {
+    color: white;
+}
+
+.nav-item:hover {
+    color: #d0949d;
 }
 
 .me-container {
@@ -31,14 +43,13 @@ body, html {
 }
 
 .me {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #989481;
     width: 400px;
     height: 600px;
-
 }
 
 .me a {
@@ -100,7 +111,6 @@ body, html {
     font-size: 20px;
     margin-bottom: 30px;
     border-bottom: solid 2px;
-
 }
 
 .about h3 {
@@ -117,13 +127,27 @@ body, html {
     padding-top: 10px;
 }
 
-.accordion-button, .accordion-body {
+.accordion-button,
+.accordion-body {
     background-color: #f1faee;
 }
 
 .accordion {
     border: solid 1px rgb(202, 202, 202);
     margin-bottom: 40px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff !important;
+    background-color: #4f000b !important;
+}
+
+.accordion-body ul li {
+    text-decoration: underline;
+}
+
+.accordion-body ul li:hover {
+    color: grey;
 }
 
 .tools-list {
@@ -138,6 +162,5 @@ body, html {
 }
 
 .font-awesome-text {
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Source Code Pro", monospace;
 }
-
