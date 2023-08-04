@@ -122,6 +122,11 @@ html {
     font-weight: 700;
 }
 
+.about h5 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
 .about section {
     margin-top: 250px;
     padding-top: 10px;

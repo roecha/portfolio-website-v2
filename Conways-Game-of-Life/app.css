@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f3e7c1;
+}
+
+#explanation {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+#rules-and-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#settings {
+    display: flex;
+    flex-direction: row;
+}
+
+#settings div {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#grid-container {
+    display: grid;
+    margin-top: 15px;
+    width: 90%;
+    /* height is controlled in app.js */
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    outline: solid 1px black;
+}
+
+#play-button {
+    width: 80px;    
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.grid-piece {
+    border: solid 1px black;
+}
+

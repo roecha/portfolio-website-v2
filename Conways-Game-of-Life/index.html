@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="app.css" />
+    </head>
+    <body>
+
+        <h1>Conway's Game of Life</h1>
+        <div id="explanation">
+            <div id="about"> 
+                <h2>About</h2>
+                <p> John Conway's <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank"><i>Game of Life</i></a> Conway's Game of Life is a simple and fascinating simulation. Imagine a grid where each cell can be alive or dead. The game progresses in steps, or "generations." In each generation, the fate of a cell is determined by its neighbors. If a live cell has too few or too many live neighbors, it dies. If a dead cell has exactly three live neighbors, it comes to life. The patterns that emerge can be surprisingly intricate and unpredictable, often resembling living organisms despite being just a set of rules acting on a grid. It's not a traditional game with players, but rather a captivating way to observe how simple rules can create complex behaviors.</p>
+            </div>
+            <div id="rules-and-info">
+                <div id="rules">
+                    <h2>Rules</h2>
+                    <ol>
+                        <li>A cell is "alive" when it is black</li>
+                        <li>A live cell with less than 2 neighbors will die due to underpopulation</li>
+                        <li>A live cell with two or three neighbors will live to the next generation</li>
+                        <li>A live cell with greater than 3 neighbors will die due to overpopulation</li>
+                        <li>A dead cell with exactly three neighbors will become alive due to reproduction</li>
+                    </ol>
+                </div>
+                <div>
+                    <h2>Info</h2>
+                    <ul>
+                        <li><b>Grid size:</b> the width and height of the grid</li>
+                        <li><b>Interval time:</b> the length of time in each generation</li>
+                        <li><b>ctl+click</b> to fill in a full row</li>
+                        <li><b>alt+click</b> to fill in a full column</li>
+                        <li>If the evolutions start to slow down, try clicking away from the grid and they should go back to normal speed</li>
+                        <li>Make the window smaller to <b>zoom out</b> on the grid</li>
+                        <li>You may add pieces to the grid while it is running</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="settings">
+            <div>
+                <label> Select grid size: </label>
+                <select id="select-value" onchange="displayGrid()">
+                    <option value="25">25x25</option>
+                    <option value="50">50x50</option>
+                    <option value="100">100x100</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="interval">Interval time in Milliseconds</label>
+                <input
+                    type="number"
+                    id="interval"
+                    name="interval"
+                    required
+                    value="500"
+                    min="1"
+                    max="10000"
+                />
+            </div>
+
+            <button id="play-button" onclick="playGame()">Play</button>
+        </div>
+        
+        <div id="grid-container"></div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
