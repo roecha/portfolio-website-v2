@@ -169,3 +169,7 @@ html {
 .font-awesome-text {
     font-family: "Source Code Pro", monospace;
 }
+
+.carousel-item img, #spotifaves-card {
+    width: 40;
+}

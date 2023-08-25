@@ -1,0 +1,59 @@
+body,
+html {
+    background-color: #f1faee;
+    font-family: "Source Code Pro", monospace;
+}
+
+h1 {
+    font-weight: 900;
+    margin-top: 80px;
+    text-align: center;
+
+}
+
+p {
+    font-weight: 900;
+    margin: auto;
+    margin-top: 30px;
+    width: 60%;
+}
+
+a {
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    align-items: end;
+    border: solid white;
+    border-radius: 20px;
+    color: white;
+    background-color: #4f000b;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #b78f94;
+}
+
+figure {
+    text-align: center;
+    margin-top: 70px;
+}
+
+img {
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 100%;
+    }
+}
+
+figcaption {
+    width: 70%;
+    margin: auto;
+    font-weight: 900;
+    /* font-size: 18px; */
+    margin-top: 10px;
+
+}
