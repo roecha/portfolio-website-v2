@@ -171,5 +171,9 @@ html {
 }
 
 .carousel-item img, #spotifaves-card {
-    width: 40;
+    width: 30rem;
+}
+
+.card {
+    margin-top: 40px;
 }
